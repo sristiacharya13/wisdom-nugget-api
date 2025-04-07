@@ -22,7 +22,7 @@ Data persistence via MongoDB
 
 ## Installation & Setup
 **1. Clone the Repository**
-git clone https://github.com/your-username/wisdom-nugget-api.git
+git clone https://github.com/your-username/wisdom-nugget-api.git  
 cd wisdom-nugget-api
 
 **2. Install Dependencies**
