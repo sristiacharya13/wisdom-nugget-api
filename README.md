@@ -21,7 +21,7 @@ Data persistence via MongoDB
 
 
 ## Installation & Setup
-**1. Clone the Repository**
+**1. Clone the Repository**  
 git clone https://github.com/your-username/wisdom-nugget-api.git  
 cd wisdom-nugget-api
 
@@ -29,9 +29,9 @@ cd wisdom-nugget-api
 npm install
 
 **3. Setup .env File**
-MONGO_URI=mongodb://127.0.0.1:27017/wisdom_nuggets_db
-PORT=5000
-Replace the Mongo URI with your MongoDB Atlas URI if you’re using a cloud database.
+MONGO_URI=mongodb://127.0.0.1:27017/wisdom_nuggets_db  
+PORT=5000  
+Replace the Mongo URI with your MongoDB Atlas URI if you’re using a cloud database.  
 
 **4. Seed Initial Data (Optional)**
 npm run seed
