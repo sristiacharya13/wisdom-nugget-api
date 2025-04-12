@@ -6,6 +6,24 @@ exports.getAllNuggets = async (req, res) => {
   res.status(200).json(nuggets);
 };
 
+// exports.countNugget=async (req,res)=>{
+//   const count = await Nugget.countDocuments();
+//   if (count === 0) return res.status(404).json({ error: 'No nuggets found' });
+//   res.status(200).json(nugget);
+// }
+
+exports.countNugget = async (req, res) => {
+  try {
+    const count = await Nugget.countDocuments();
+    if (count === 0) {
+      return res.status(404).json({ error: 'No nuggets found' });
+    }
+    res.status(200).json({ count });  // <-- return count properly
+  } catch (error) {
+    res.status(500).json({ error: 'Server error' });
+  }
+};
+
 // GET /nuggets/random
 exports.getRandomNugget = async (req, res) => {
   const count = await Nugget.countDocuments();
